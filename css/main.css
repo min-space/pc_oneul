@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+/* 공통 */
+#wrap {min-width: 1700px; overflow-x: hidden; }
+.inner {width: 1700px; margin: 0 auto; padding: 0 5%;}
+
+/***************************************************** 모바일 *****************************************************/
+
+/*header*/
+header { width: 100%; position: absolute; left: 0; top: 0; z-index: 999; padding: 30px 0; }
+header .inner {display: flex; justify-content: space-between; align-items: center; }
+header h1 img { width: 120px; }
+
+
+header .gnb { display: flex; }
+header .gnb > li > a { display: block; color: #FFF; font-size: 20px; padding: 10px 50px; }
+
+header .reservation { background: #c27a34; color: #fff; padding: 10px 30px; border-radius: 50px; text-transform: uppercase; }
+
+
+/* main-visual */
+#main_visual { height: 100vh; text-align: center; }
+#main_visual .mv li { position: relative; height: 100vh; }
+#main_visual .mv li.mv1 { background: url('../images/mv_01.jpg') no-repeat center / cover; }
+#main_visual .mv li.mv2 { background: url('../images/mv_02.jpg') no-repeat center / cover; }
+
+#main_visual .mv li .mv_txt { position: absolute; left: 0; top: 50%; width: 100%; transform: translateY(-50%); color: #fff; }
+#main_visual .mv li .mv_txt h2 { font-size: 80px; font-weight: 400; }
+#main_visual .mv li .mv_txt h3 { font-size: 16px; padding: 30px 0; font-weight: 400; }
+
+#main_visual .mv .swiper-button-next, #main_visual .mv .swiper-button-prev{color: #fff;}
+#main_visual .mv .swiper-pagination-bullet{background-color: #fff;}
+
+
+
+/* main 공통 */
+#main h2 { font-size: 60px; padding-bottom: 50px; font-weight: normal; }
+#main h2:before { content: "Restaurant o’neul"; display: block; font-size: 14px; color: #c27a34; letter-spacing: 5px; }
+
+/* value */
+#value { padding: 200px 0; }
+#value .inner { display: flex; gap: 50px; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+#value .inner div { width: calc((100% - 50px)/2); }
+#value .value_txt p { font-size: 14px; letter-spacing: -1px; color: rgba(0,0,0,0.5); }
+#value .detail { text-transform: uppercase; transition: all 0.5s; display: inline-block; padding: 10px 50px; background: rgba(194,122,52,.8); color: #fff; margin-top: 50px; }
+#value .detail:hover { background: #c27a34; }
+
+#value img { width: 100%;}
+
+
+/* menu */
+#menu { text-align: center; }
+#menu .menu_list li { transition: opacity 1s; position: relative;}
+#menu .menu_list li img { width: 100%; }
+#menu .menu_list li h3 { font-weight: 400; font-size: 20px; position: absolute; width: 100%; left: 0; bottom: 30px; color: #fff; }
+
+
+/* room */
+#room { padding: 200px 0; text-align: center; }
+
+#room ul { display: flex; gap: 30px; flex-wrap: wrap; }
+#room ul li { position: relative; width: calc((100% - 90px)/4); height: 600px; color: #fff; }
+#room ul li:nth-child(1) { background: url('../images/room_img01.jpg') no-repeat center / cover; }
+#room ul li:nth-child(2) { background: url('../images/room_img02.jpg') no-repeat center / cover; }
+#room ul li:nth-child(3) { background: url('../images/room_img03.jpg') no-repeat center / cover; }
+#room ul li:nth-child(4) { background: url('../images/room_img04.jpg') no-repeat center / cover; }
+
+#room ul li dl { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 100%; }
+#room ul li dt { font-size: 20px; }
+#room ul li dt span { display: block; font-size: 25px; }
+#room ul li dd { color: rgba(255,255,255,0.7); margin-top: 20px; }
+#room ul li .view { transform: scale(1,1); text-transform: uppercase; color: #fff; background: rgba(194,122,52,1); display: inline-block; padding: 10px 50px; }
+
+
+
+/* footer */
+#footer { background: #383431; padding: 80px 0; }
+#footer .inner { display: flex; justify-content: space-between; text-align: center;}
+#footer .footer_logo { font-size: 30px; color: rgba(194,122,52,0.5); }
+#footer .footer_txt { color: #786659; font-size: 16px;}
+#footer .footer_txt address { color: #9a8e87; padding-bottom: 10px; }
+#footer .sns { display: flex; gap: 10px; justify-content: center; }
+#footer .sns li { transition: background 0.5s; width:40px; height:40px; background: #786659; border-radius: 50%; padding: 10px; }
+#footer .sns li:hover { background: #c27a34; }
+
